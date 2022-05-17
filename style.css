@@ -1,0 +1,84 @@
+main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+@media (orientation: portrait) and (min-width: 500px) {
+  .splash {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .splash {
+    width: 100%;
+    height: auto;
+  }
+}
+
+h1 {
+  font-family: "Laviossa", sans-serif;
+}
+@media (min-width: 600px) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-family: "Laviossa", sans-serif;
+    font-size: 2rem;
+    padding: 1rem;
+  }
+}
+
+body {
+  line-height: 1.4;
+  background-color: rgb(255, 248, 239);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+p {
+  font-family: "noto serif display";
+  font-size: 0.8rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.grid_1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.image2 {
+  grid-column: 1 / span 2;
+}
+
+.image3 {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.image4 {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+}
+
+.image5 {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 2;
+}
+
+footer {
+  font-family: "noto serif display";
+  text-align: center;
+  position: sticky;
+  top: 100vh;
+  max-width: none;
+  padding-bottom: 10px;
+}
